@@ -6,8 +6,8 @@
 // document.head.appendChild(firebaseApp);
 // document.head.appendChild(firebaseMessaging);
 
-importScripts("https://pushly.s3.ap-south-1.amazonaws.com/lib/firebase-listener-late.js");
-importScripts("https://pushly.s3.ap-south-1.amazonaws.com/lib/firebase-listener-late.js");
+importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js");
+importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
 
 const _500Client = require("../../../core/main");
 
