@@ -97,7 +97,7 @@ class PushlyFirebaseListener {
       subscriptionObject: this.subscriptionObject
     }
 
-    var messageLogUrl = 'https://custom.'+region+'.500apps.io/c/pushly/messagelog';
+    var messageLogUrl = 'https://custom.dev.500apps.io/c/pushly/messagelog';
 
     fetch(messageLogUrl, {
       method: "post",
