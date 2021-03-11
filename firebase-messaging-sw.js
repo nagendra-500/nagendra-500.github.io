@@ -1,17 +1,7 @@
-// var firebaseApp = document.createElement("script"); // create a script DOM node
-// firebaseApp.src = "https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"; // set its src to the provided URL
-
-// var firebaseMessaging = document.createElement("script"); // create a script DOM node
-// firebaseMessaging.src = "https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js"; // set its src to the provided URL
-// document.head.appendChild(firebaseApp);
-// document.head.appendChild(firebaseMessaging);
-
 if ("undefined" === typeof window) {
   importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js");
   importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
 }
-
-const _500Client = require("../../../core/main");
 
 /**
  * @class PushlyFirebaseListener
