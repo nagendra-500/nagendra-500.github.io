@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PUSH</title>
     <script>
-      (function (s, i, t, e, r, p) {
-        p = i.getElementsByTagName("head")[0];
-        r = i.createElement("script");
-        r.async = 1;
-        r.src = t + e;
-        r.onload = () => {
-          s._sr_r_.init("4674695113350587", 5, "dev");
+      ((p, u, s, h, l, y) => {
+        p._push = { apiKey: "5613799550273488" };
+        p._pushfcm = {
+          apiKey: "",
+          location: "dev",
+          authDomain: "",
+          databaseURL: "",
+          projectId: "",
+          storageBucket: "",
+          messagingSenderId: "",
+          appId: "",
         };
-        p.appendChild(r);
+        l = u.getElementsByTagName("head")[0];
+        y = u.createElement("script");
+        y.async = 1;
+        y.src = s + h;
+        l.appendChild(y);
       })(window, document, "https://pushly.s3.ap-south-1.amazonaws.com/lib/", "pushdist.min.js");
     </script>
   </head>
