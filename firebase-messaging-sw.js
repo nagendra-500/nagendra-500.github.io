@@ -6,8 +6,10 @@
 // document.head.appendChild(firebaseApp);
 // document.head.appendChild(firebaseMessaging);
 
-importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js");
-importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
+if ("undefined" === typeof window) {
+  importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js");
+  importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
+}
 
 const _500Client = require("../../../core/main");
 
