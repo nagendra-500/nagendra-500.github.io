@@ -4,26 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PUSH</title>
     <script>
-      ((p, u, s, h, l, y) => {
-        p._push = { apiKey: "9424328261384928" };
-        p._pushfcm = {
-          apiKey: "",
-          location: "dev",
-          authDomain: "",
-          databaseURL: "",
-          projectId: "",
-          storageBucket: "",
-          messagingSenderId: "",
-          appId: "",
+      (function (s, i, t, e, r, p) {
+        p = i.getElementsByTagName("head")[0];
+        r = i.createElement("script");
+        r.async = 1;
+        r.src = t + e;
+        r.onload = () => {
+          s._sr_r_.init("4674695113350587", 5, "dev");
         };
-        l = u.getElementsByTagName("head")[0];
-        y = u.createElement("script");
-        y.async = 1;
-        y.src = s + h;
-        l.appendChild(y);
-      })(window, document, "https://cdn.500apps.io/js/push/", "push.min.js");
+        p.appendChild(r);
+      })(window, document, "https://pushly.s3.ap-south-1.amazonaws.com/lib/", "pushdist.min.js");
     </script>
   </head>
 
@@ -165,9 +157,7 @@
             this.light = light;
             // ---- create points ----
             for (const p of struct.points) {
-              this.points.push(
-                new Robot.Point(size * p.x + x, size * p.y + y, p.f)
-              );
+              this.points.push(new Robot.Point(size * p.x + x, size * p.y + y, p.f));
             }
             // ---- create links ----
             for (const link of struct.links) {
@@ -191,11 +181,7 @@
           }
           update() {
             if (++this.frame % Math.round(20 / ts) === 0) this.dir = -this.dir;
-            if (
-              this === pointer.dancerDrag &&
-              this.size < 16 &&
-              this.frame > 600
-            ) {
+            if (this === pointer.dancerDrag && this.size < 16 && this.frame > 600) {
               pointer.dancerDrag = null;
               dancers.push(
                 new Robot(
@@ -236,10 +222,7 @@
                 const a = Math.atan2(dy, dx);
                 // ---- shadow ----
                 ctx.save();
-                ctx.translate(
-                  link.p0.x + link.size * 0.25,
-                  link.p0.y + link.size * 0.25
-                );
+                ctx.translate(link.p0.x + link.size * 0.25, link.p0.y + link.size * 0.25);
                 ctx.rotate(a);
                 ctx.drawImage(link.shadow, -link.size * 0.5, -link.size * 0.5);
                 ctx.restore();
@@ -262,23 +245,13 @@
             this.light = light || 1.0;
             this.force = force || 0.5;
             this.image = this.stroke(
-              "hsl(" +
-                parent.color +
-                " ,30%, " +
-                parent.light * this.light +
-                "%)",
+              "hsl(" + parent.color + " ,30%, " + parent.light * this.light + "%)",
               true,
               disk,
               dist,
               size
             );
-            this.shadow = this.stroke(
-              "rgba(0,0,0,0.5)",
-              false,
-              disk,
-              dist,
-              size
-            );
+            this.shadow = this.stroke("rgba(0,0,0,0.5)", false, disk, dist, size);
           }
           update() {
             const p0 = this.p0;
@@ -314,13 +287,7 @@
             ict.lineWidth = size;
             ict.strokeStyle = color;
             if (disk) {
-              ict.arc(
-                size * 0.5 + dist,
-                size * 0.5,
-                size * 0.5,
-                0,
-                2 * Math.PI
-              );
+              ict.arc(size * 0.5 + dist, size * 0.5, size * 0.5, 0, 2 * Math.PI);
               ict.fillStyle = color;
               ict.fill();
             } else {
@@ -443,12 +410,7 @@
           ctx.clearRect(0, 0, canvas.width, canvas.height);
           ctx.fillStyle = "#222";
           ctx.fillRect(0, 0, canvas.width, canvas.height * 0.15);
-          ctx.fillRect(
-            0,
-            canvas.height * 0.85,
-            canvas.width,
-            canvas.height * 0.15
-          );
+          ctx.fillRect(0, canvas.height * 0.85, canvas.width, canvas.height * 0.15);
           // ---- animate robots ----
           for (const dancer of dancers) {
             dancer.update();
