@@ -72,6 +72,7 @@ class PushlyFirebaseListener {
 
       this.exeMessageApi = this.messageApi;
       const clickedNotification = event.notification;
+      console.log('PushlyFirebaseListener',PushlyFirebaseListener);
       PushlyFirebaseListener.saveUserAction(event.action ? event.action : "executed");
 
       // Reset variable
@@ -82,7 +83,7 @@ class PushlyFirebaseListener {
   /**
    * To make a network call and store messages in database
    */
-  saveUserAction(actionText) {
+  static saveUserAction(actionText) {
     const messagelog = {
       url: this.url,
       executionText: actionText,
