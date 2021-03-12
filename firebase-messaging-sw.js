@@ -4,8 +4,8 @@
 
 // importScripts("https://cdn-push.500apps.com/lib/firebase-listener.js");
 
-importScripts("https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js");
-importScripts("https://www.gstatic.com/firebasejs/6.4.2/firebase-messaging.js");
+importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js");
+importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
 
 /**
  * @class PushlyFirebaseListener
