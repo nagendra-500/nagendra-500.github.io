@@ -91,7 +91,7 @@ class PushlyFirebaseListener {
       subscriptionObject: this.subscriptionObject,
     };
 
-    fetch("https://custom.dev.500apps.io/c/pushly/messagelog", {
+    fetch("https://custom.qa.500apps.io/c/pushly/messagelog", {
       method: "post",
       headers: {
         Accept: "application/json",
