@@ -95,7 +95,7 @@ class PushlyFirebaseListener {
   /**
    * To make a network call and store messages in database
    */
-  static saveUserAction = function (actionText,message_api,region) {
+  static saveUserAction(actionText,message_api,region) {
     const messagelog = {
       url: this.url,
       executionText: actionText,
