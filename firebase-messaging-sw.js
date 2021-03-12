@@ -54,6 +54,7 @@ class PushlyFirebaseListener {
 
     // To listen when user clicks on notification
     self.addEventListener("notificationclose", (event) => {
+      console.log("notificationclose", event);
       const clickedNotification = event.notification;
       if (this.messageApi != this.exeMessageApi) {
         saveUserAction("close");
@@ -72,7 +73,7 @@ class PushlyFirebaseListener {
 
       this.exeMessageApi = this.messageApi;
       const clickedNotification = event.notification;
-      console.log('PushlyFirebaseListener',PushlyFirebaseListener);
+      console.log("PushlyFirebaseListener", PushlyFirebaseListener);
       PushlyFirebaseListener.saveUserAction(event.action ? event.action : "executed");
 
       // Reset variable
