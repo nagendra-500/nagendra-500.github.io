@@ -37,9 +37,9 @@ importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
    * Initialization method
    */
   init() {
-    console.log("event response" );
+    console.log("event response" ,self);
     // To listen the messages pushed from service worker
-    window.addEventListener("push", function (event) {
+    self.addEventListener("push", function (event) {
       console.log("event", event);
       var message = event.data.json();
       this.messageApi = message.data.message_api;
@@ -54,12 +54,12 @@ importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
       if (message.data.action_button) {
         options["actions"] = JSON.parse(message.data.action_button);
       }
-      console.log("event response", event);
+
       event.waitUntil(self.registration.showNotification(title, options));
     });
 
     // To listen when user clicks on notification
-    window.addEventListener("notificationclose", (event) => {
+    self.addEventListener("notificationclose", (event) => {
       console.log("notificationclose", event);
       const clickedNotification = event.notification;
       if (this.messageApi != this.exeMessageApi) {
@@ -68,7 +68,7 @@ importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
     });
 
     // To listen when user closes notification
-    window.addEventListener("notificationclick", function (event) {
+    self.addEventListener("notificationclick", function (event) {
       console.log("notificationclick", event);
 
       if (event.action) {
