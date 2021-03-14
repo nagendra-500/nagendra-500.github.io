@@ -37,6 +37,7 @@ importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
    * Initialization method
    */
   init() {
+    console.log("event response", );
     // To listen the messages pushed from service worker
     self.addEventListener("push", function (event) {
       console.log("event", event);
