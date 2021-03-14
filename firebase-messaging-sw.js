@@ -15,8 +15,6 @@ importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
    * @constructor
    */
   constructor() {
-    // _500Client.rest.setServerURL(`${window._pushGlobal.serverUrl}`);
-
     // Store messageApi of current executed message when user clicks on the message
     this.exeMessageApi = "";
 
@@ -37,7 +35,6 @@ importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
    * Initialization method
    */
   init() {
-    console.log("event response" ,self);
     // To listen the messages pushed from service worker
     self.addEventListener("push", function (event) {
       console.log("event", event);
@@ -101,7 +98,7 @@ importScripts("https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js");
       subscriptionObject: this.subscriptionObject,
     };
 
-    fetch("https://custom.dev.500apps.io/c/pushly/messagelog", {
+    fetch(`https://custom.${window._pushfcm.location}.500apps.io/c/pushly/messagelog`, {
       method: "post",
       headers: {
         Accept: "application/json",
