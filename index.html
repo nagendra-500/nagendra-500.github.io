@@ -7,6 +7,31 @@
     <title>PUSH</title>
     <script>
       ((p, u, s, h, l, y) => {
+        p._push = { apiKey: "7267517416099676" };
+        p._pushfcm = {
+          apiKey: "",
+          location: "dev",
+          authDomain: "",
+          databaseURL: "",
+          projectId: "",
+          storageBucket: "",
+          messagingSenderId: "",
+          appId: "",
+        };
+        l = u.getElementsByTagName("head")[0];
+        y = u.createElement("script");
+        y.async = 1;
+        y.src = s + h;
+        l.appendChild(y);
+      })(
+        window,
+        document,
+        "https://pushly.s3.ap-south-1.amazonaws.com/lib/",
+        "push.min.js"
+      );
+    </script>
+    <!-- <script>
+      ((p, u, s, h, l, y) => {
         p._push = { apiKey: "9127203710370038" };
         p._pushfcm = {
           apiKey: "",
@@ -23,8 +48,13 @@
         y.async = 1;
         y.src = s + h;
         l.appendChild(y);
-      })(window, document, "https://pushly.s3.ap-south-1.amazonaws.com/lib/", "push.min.js");
-    </script>
+      })(
+        window,
+        document,
+        "https://pushly.s3.ap-south-1.amazonaws.com/lib/",
+        "push.min.js"
+      );
+    </script> -->
   </head>
 
   <body>
