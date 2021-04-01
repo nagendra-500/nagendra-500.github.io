@@ -32,7 +32,7 @@ if ("undefined" === typeof window) {
       this.launchUrl = "";
   
       //Store push object
-      this.pushObj = {};
+      this.pushObj = "";
     }
   
     /**
@@ -44,9 +44,9 @@ if ("undefined" === typeof window) {
         var message = event.data.json();
         console.log("Push message", message);
         if (message.data.hasOwnProperty("data")) {
-          var pushObj = JSON.parse(message.data.data);
+            this.pushObj = JSON.parse(message.data.data);
           var obj = JSON.parse(message.data.notification);
-          localStorage.setItem("response", pushObj);
+          localStorage.setItem("response", this.pushObj);
         } else if (!message.data.hasOwnProperty("data")) {
           var obj = JSON.parse(message.data.notification);
         }
@@ -92,7 +92,7 @@ if ("undefined" === typeof window) {
      * To make a network call and store messages in database
      */
     saveUserAction(actionText) {
-      console.log("jfhsdjkhfjkdh");
+      console.log("jfhsdjkhfjkdh",this.pushObj);
       var result = localStorage.getItem("response");
       result.action = actionText;
       var messagelog = this.pushObj;
