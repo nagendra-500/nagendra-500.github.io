@@ -46,7 +46,6 @@ if ("undefined" === typeof window) {
         if (message.data.hasOwnProperty("data")) {
             this.pushObj = JSON.parse(message.data.data);
           var obj = JSON.parse(message.data.notification);
-          localStorage.setItem("response", this.pushObj);
         } else if (!message.data.hasOwnProperty("data")) {
           var obj = JSON.parse(message.data.notification);
         }
@@ -93,8 +92,7 @@ if ("undefined" === typeof window) {
      */
     saveUserAction(actionText) {
       console.log("jfhsdjkhfjkdh",this.pushObj);
-      var result = localStorage.getItem("response");
-      result.action = actionText;
+      this.pushObj.action = actionText;
       var messagelog = this.pushObj;
       console.log("respose", messagelog);
       fetch(`https://my.dev.500apps.com/pcors?url=https://push.dev.500apps.com/push/v1/message/log?app_name=push`, {
