@@ -36,7 +36,7 @@ class PushlyFirebaseListener {
     this.pushObj = "";
 
     // Message Id
-    this.message_id = "";
+    //this.message_id = "";
   }
 
   /**
@@ -67,9 +67,10 @@ class PushlyFirebaseListener {
 
     // To listen when user clicks on notification
     self.addEventListener("notificationclose", (event) => {
+      var that=this;
       console.log("notificationclose", event);
       const clickedNotification = event.notification;
-      console.log("Message_id", this.message_id);
+      console.log("Message_id", that.message_id);
       this.saveUserAction("close");
     });
 
