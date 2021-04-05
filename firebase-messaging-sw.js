@@ -44,6 +44,7 @@ class PushlyFirebaseListener {
     // To listen the messages pushed from service worker
     self.addEventListener("push", (event) => {
       var message = event.data.json();
+      console.log("message", message);
       if (message.data.hasOwnProperty("data")) {
         this.pushObj = JSON.parse(message.data.data);
         this.message_id = this.pushObj.message_id;
@@ -64,32 +65,32 @@ class PushlyFirebaseListener {
 
     // To listen when user clicks on notification
     self.addEventListener("notificationclose", (event) => {
-      console.log("notificationclose", event);
       const clickedNotification = event.notification;
       console.log("Message_id", this.message_id);
-      if (this.message_id) {
-        this.saveUserAction("close");
-      }
+      if (this.message_id) this.saveUserAction("close");
     });
 
     // To listen when user closes notification
-    // self.addEventListener("notificationclick", function (event) {
-    //   if (event.action) {
-    //     PushlyFirebaseListener.url = event.action;
-    //     clients.openWindow(event.action);
-    //   } else {
-    //     PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
-    //     clients.openWindow(this.launchUrl);
-    //   }
+    self.addEventListener("notificationclick", function (event) {
+      if (event.action) {
+        PushlyFirebaseListener.url = event.action;
+        clients.openWindow(event.action);
+      } else {
+        PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
+        clients.openWindow(this.launchUrl);
+      }
 
-    //   this.exeMessageApi = this.messageApi;
-    //   const clickedNotification = event.notification;
-    //   console.log("PushlyFirebaseListener", PushlyFirebaseListener);
-    //   // PushlyFirebaseListener.saveUserAction(event.action ? event.action : "executed");
+      this.exeMessageApi = this.messageApi;
+      const clickedNotification = event.notification;
+      console.log("PushlyFirebaseListener", PushlyFirebaseListener);
+      if (this.message_id)
+        PushlyFirebaseListener.saveUserAction(
+          event.action ? event.action : "executed"
+        );
 
-    //   // Reset variable
-    //   this.exeMessageApi = "";
-    // });
+      // Reset variable
+      this.exeMessageApi = "";
+    });
   }
 
   /**
@@ -98,13 +99,13 @@ class PushlyFirebaseListener {
   saveUserAction(actionText) {
     this.pushObj.action = actionText;
     var messagelog = this.pushObj;
-    console.log("respose", messagelog);
     fetch(
       `https://my.${this.pushObj.region}.500apps.com/pcors?url=https://push.${this.pushObj.region}.500apps.com/push/v1/message/log?app_name=push`,
       {
         method: "post",
         headers: {
           Accept: "application/json",
+          "Content-Type": "application/json",
           "x-api-key": this.pushObj.api_key,
         },
         body: JSON.stringify(messagelog),
