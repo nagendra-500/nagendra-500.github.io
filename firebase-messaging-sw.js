@@ -44,7 +44,7 @@ class PushlyFirebaseListener {
    */
   init() {
     // To listen the messages pushed from service worker
-    self.addEventListener("push", function (event) {
+    self.addEventListener("push", (event) => {
       var message = event.data.json();
       console.log("Push message", message);
       if (message.data.hasOwnProperty("data")) {
@@ -67,7 +67,7 @@ class PushlyFirebaseListener {
 
     // To listen when user clicks on notification
     self.addEventListener("notificationclose", (event) => {
-      var that=this;
+      var that = this;
       console.log("notificationclose", event);
       const clickedNotification = event.notification;
       console.log("Message_id", that.message_id);
