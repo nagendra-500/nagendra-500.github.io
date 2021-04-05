@@ -69,27 +69,28 @@ class PushlyFirebaseListener {
     self.addEventListener("notificationclose", (event) => {
       console.log("notificationclose", event);
       const clickedNotification = event.notification;
+      console.log("Message_id", this.message_id);
       this.saveUserAction("close");
     });
 
     // To listen when user closes notification
-    self.addEventListener("notificationclick", function (event) {
-      if (event.action) {
-        PushlyFirebaseListener.url = event.action;
-        clients.openWindow(event.action);
-      } else {
-        PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
-        clients.openWindow(this.launchUrl);
-      }
+    // self.addEventListener("notificationclick", function (event) {
+    //   if (event.action) {
+    //     PushlyFirebaseListener.url = event.action;
+    //     clients.openWindow(event.action);
+    //   } else {
+    //     PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
+    //     clients.openWindow(this.launchUrl);
+    //   }
 
-      this.exeMessageApi = this.messageApi;
-      const clickedNotification = event.notification;
-      console.log("PushlyFirebaseListener", PushlyFirebaseListener);
-      // PushlyFirebaseListener.saveUserAction(event.action ? event.action : "executed");
+    //   this.exeMessageApi = this.messageApi;
+    //   const clickedNotification = event.notification;
+    //   console.log("PushlyFirebaseListener", PushlyFirebaseListener);
+    //   // PushlyFirebaseListener.saveUserAction(event.action ? event.action : "executed");
 
-      // Reset variable
-      this.exeMessageApi = "";
-    });
+    //   // Reset variable
+    //   this.exeMessageApi = "";
+    // });
   }
 
   /**
