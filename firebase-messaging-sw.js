@@ -81,15 +81,14 @@ class PushlyFirebaseListener {
     self.addEventListener("notificationclick", (event) => {
       this.execute = true;
       console.log("notificationclick", event);
-      if (event.action) {
-        PushlyFirebaseListener.url = event.action;
-        clients.openWindow(event.action);
-      } else {
-        console.log("LANCH URL", this.launchUrl);
-        PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
-        console.log("LANCH URL", PushlyFirebaseListener.url);
-        clients.openWindow(this.launchUrl);
-      }
+      //   if (event.action) {
+      //     PushlyFirebaseListener.url = event.action;
+      //     clients.openWindow(event.action);
+      //   } else {
+
+      //   PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
+      clients.openWindow(this.launchUrl);
+      //   }
 
       this.exeMessageApi = this.messageApi;
       const clickedNotification = event.notification;
