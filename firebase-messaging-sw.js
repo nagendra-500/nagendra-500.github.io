@@ -87,6 +87,7 @@ class PushlyFirebaseListener {
       } else {
         console.log("LANCH URL", this.launchUrl);
         PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
+        console.log("LANCH URL", PushlyFirebaseListener.url);
         clients.openWindow(this.launchUrl);
       }
 
