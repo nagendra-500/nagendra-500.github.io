@@ -81,9 +81,11 @@ class PushlyFirebaseListener {
       console.log("evenet", event);
       if (event.action) {
         PushlyFirebaseListener.url = event.action;
+        console.log("evenet", event.action);
         clients.openWindow(event.action);
       } else {
         PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
+        console.log("evenet", PushlyFirebaseListener.launchUrl);
         clients.openWindow(this.launchUrl);
       }
 
