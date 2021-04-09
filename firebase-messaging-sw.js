@@ -81,16 +81,8 @@ class PushlyFirebaseListener {
     self.addEventListener("notificationclick", (event) => {
       this.execute = true;
       console.log("notificationclick", event);
-      //   if (event.action) {
-      //     PushlyFirebaseListener.url = event.action;
-      //     clients.openWindow(event.action);
-      //   } else {
-
-      //   PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
-      clients.openWindow(this.launchUrl);
-      //   }
-
-      this.exeMessageApi = this.messageApi;
+      // Redirect to website which is given by subscriber
+      if (this.launchUrl) clients.openWindow(this.launchUrl);
       const clickedNotification = event.notification;
       if (this.message_id)
         this.saveUserAction(event.action ? event.action : "executed");
