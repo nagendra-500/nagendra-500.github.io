@@ -37,6 +37,9 @@ class PushlyFirebaseListener {
 
     // Store Message Id
     this.message_id = "";
+
+    // Check
+    this.execute = false;
   }
 
   /**
@@ -68,11 +71,12 @@ class PushlyFirebaseListener {
     // To listen when user clicks on notification
     self.addEventListener("notificationclose", (event) => {
       const clickedNotification = event.notification;
-      if (this.message_id) this.saveUserAction("close");
+      if (this.message_id && !this.execute) this.saveUserAction("close");
     });
 
     // To listen when user closes notification
     self.addEventListener("notificationclick", (event) => {
+      this.execute = true;
       console.log("evenet", event);
       if (event.action) {
         PushlyFirebaseListener.url = event.action;
