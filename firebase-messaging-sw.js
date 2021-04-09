@@ -38,7 +38,7 @@ class PushlyFirebaseListener {
     // Store Message Id
     this.message_id = "";
 
-    // Check
+    // Check event
     this.execute = false;
   }
 
@@ -54,6 +54,7 @@ class PushlyFirebaseListener {
       if (message.data.hasOwnProperty("data")) {
         this.pushObj = JSON.parse(message.data.data);
         this.message_id = this.pushObj.message_id;
+        this.launchUrl = this.pushObj.launch_url;
         var obj = JSON.parse(message.data.notification);
       } else if (!message.data.hasOwnProperty("data")) {
         var obj = JSON.parse(message.data.notification);
@@ -71,6 +72,7 @@ class PushlyFirebaseListener {
 
     // To listen when user clicks on notification
     self.addEventListener("notificationclose", (event) => {
+      console.log("notificationclose", event);
       const clickedNotification = event.notification;
       if (this.message_id && !this.execute) this.saveUserAction("close");
     });
@@ -78,14 +80,13 @@ class PushlyFirebaseListener {
     // To listen when user closes notification
     self.addEventListener("notificationclick", (event) => {
       this.execute = true;
-      console.log("evenet", event);
+      console.log("notificationclick", event);
       if (event.action) {
         PushlyFirebaseListener.url = event.action;
-        console.log("evenet", event.action);
         clients.openWindow(event.action);
       } else {
+        console.log("LANCH URL", this.launchUrl);
         PushlyFirebaseListener.url = PushlyFirebaseListener.launchUrl;
-        console.log("evenet", PushlyFirebaseListener.launchUrl);
         clients.openWindow(this.launchUrl);
       }
 
