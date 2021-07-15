@@ -4,40 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PUSH</title>
-    <script>
-      // ((p, u, s, h, l, y) => {
-      //   p._push = { apiKey: "7498891335822269" };
-      //   p._pushfcm = {
-      //     apiKey: "",
-      //     location: "dev",
-      //     authDomain: "",
-      //     databaseURL: "",
-      //     projectId: "",
-      //     storageBucket: "",
-      //     messagingSenderId: "",
-      //     appId: "",
-      //   };
-      //   l = u.getElementsByTagName("head")[0];
-      //   y = u.createElement("script");
-      //   y.async = 1;
-      //   y.src = s + h;
-      //   l.appendChild(y);
-      // })(window, document, "https://pushly.s3.ap-south-1.amazonaws.com/lib/", "push.min.js");
-
-      ((p, u, s, h, l, y) => {
-        p._push = { apiKey: "7498891335822269" };
-        p._pushfcm = {
-          location: "dev",
+    <title>BOTUP</title>
+    <div id="app"></div>
+   <script>
+      (function(b, o, t, u, p, c) {
+        c = o.getElementsByTagName("head")[0];
+        p = o.createElement("script");
+        p.async = 1;
+        p.src = t + u;
+        p.onload = () => {
+          b._Botup.init("6961464327733289", 271, "dev");
         };
-        l = u.getElementsByTagName("head")[0];
-        y = u.createElement("script");
-        y.async = 1;
-        y.id = "pushninja_script";
-        y.src = s + h;
-        l.appendChild(y);
-      })(window, document, "https://pushly.s3.ap-south-1.amazonaws.com/lib/", "push.min.js");
-    </script>
+        c.appendChild(p);
+      })(window, document, "https://pushly.s3.ap-south-1.amazonaws.com/lib/", "botupchat.js");
+    </script> 
+    
   </head>
 
   <body>
