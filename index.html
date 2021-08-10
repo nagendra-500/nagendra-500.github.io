@@ -7,6 +7,22 @@
     <title>BOTUP</title>
     <div id="app"></div>
     <script>
+
+      // ((b, o, t, u, p, c) => {
+      //   d = o.createElement("div");
+      //   d.id = "app";
+      //   c = o.getElementsByTagName("head")[0];
+      //   p = o.createElement("script");
+      //   p.async = 1;
+      //   p.id = "botup";
+      //   p.src = t + u;
+      //   p.onload = () => {
+      //     b._Botup.init("6961464327733289", "271", "dev");
+      //   };
+      //   // o.body.appendChild(d);
+      //   c.appendChild(p);
+      // })(window, document, "", "botupchat.js");
+
       ((b, o, t, u, p, c) => {
         d = o.createElement("div");
         d.id = "app";
@@ -18,10 +34,9 @@
         p.onload = () => {
           b._Botup.init("6961464327733289", "271", "dev");
         };
-        // o.body.appendChild(d);
         c.appendChild(p);
-      })(window, document, "", "botupchat.js");
-
+        o.body.appendChild(d);
+      })(window, document, "https://widgets.500apps.com/botup/", "botupchat.js");
       // (window, document, "https://widgets.500apps.com/dev/botup", "/botupchat.js");
     </script>
   </head>
