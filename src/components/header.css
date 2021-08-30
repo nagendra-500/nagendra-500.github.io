@@ -1,0 +1,12 @@
+.head_navlink {
+  text-decoration: none !important;
+  color: black;
+}
+
+.head_navlink:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.btnsu :hover {
+  color: blue;
+  background-color: rgb(238, 232, 232);
+}
