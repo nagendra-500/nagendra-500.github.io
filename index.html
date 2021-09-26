@@ -23,20 +23,22 @@
       //   c.appendChild(p);
       // })(window, document, "", "botupchat.js");
 
-      ((b, o, t, u, p, c) => {
-        d = o.createElement("div");
-        d.id = "app";
-        c = o.getElementsByTagName("head")[0];
-        p = o.createElement("script");
-        p.async = 1;
-        p.id = "botup";
-        p.src = t + u;
-        p.onload = () => {
-          b._Botup.init("6961464327733289", "271", "dev");
-        };
-        o.lastChild.append(d);
-        c.appendChild(p);
-      })(window, document, "https://widgets.500apps.com/botup/", "botupchat.js");
+      setTimeout(function() {
+        (function(b, o, t, u, p, c) {
+          d = o.createElement("div");
+          d.id = "app";
+          c = o.getElementsByTagName("head")[0];
+          p = o.createElement("script");
+          p.async = 1;
+          p.id = "botup";
+          p.src = t + u;
+          p.onload = function() {
+            b._Botup.init("3230758851452091", "139", "ap1");
+          };
+          o.lastChild.append(d);
+          c.appendChild(p);
+        })(window, document, "", "botupchat.js");
+      }, 2000);
       // (window, document, "https://widgets.500apps.com/dev/botup", "/botupchat.js");
     </script>
   </head>
