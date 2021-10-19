@@ -136,7 +136,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/home/agile/Documents/Nagendra/infinity-botup-widget/dist";
+/******/ 	__webpack_require__.p = "/home/agile/Documents/Nagendra/infinity-botup-widget/https:/widgets.500apps.com/botup";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
