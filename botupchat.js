@@ -15376,12 +15376,13 @@ var Bot = /*#__PURE__*/function () {
 
               case 5:
                 response = _context.sent;
-                // To set project id in local storage
+                console.log("response===>", response); // To set project id in local storage
+
                 this.storage.setLocalStorage("projectID-".concat(flowID), response.project_id);
                 this.storage.setSessionStorage("flowID-".concat(flowID), JSON.parse(response.workflow));
                 return _context.abrupt("return", JSON.parse(response.workflow));
 
-              case 9:
+              case 10:
               case "end":
                 return _context.stop();
             }
@@ -21932,6 +21933,7 @@ var Chat = /*#__PURE__*/function () {
     this.activeConversation = [];
     this.storage = new __WEBPACK_IMPORTED_MODULE_4__util_storage__["a" /* default */]();
     getMoment().then(function (moment) {
+      if (moment === undefined) return;
       _this.moment = new moment.default();
     });
   }
