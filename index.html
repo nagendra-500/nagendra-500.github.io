@@ -25,24 +25,42 @@
       //   })(window, document, "", "ninjachat.js");
       // }, 2000);
 
-      setTimeout(function () {
-        (function (b, o, t, u, p, c) {
-          d = o.createElement("div");
-          d.id = "app";
-          c = o.getElementsByTagName("head")[0];
-          p = o.createElement("script");
-          p.async = 1;
-          p.id = "botup";
-          p.src = t + u;
-          p.onload = function () {
-//             b._Botup.init("3230758851452091", "139", "ap1");
-  		b._Botup.init('228836121416549', '371', 'dev')
+//       setTimeout(function () {
+//         (function (b, o, t, u, p, c) {
+//           d = o.createElement("div");
+//           d.id = "app";
+//           c = o.getElementsByTagName("head")[0];
+//           p = o.createElement("script");
+//           p.async = 1;
+//           p.id = "botup";
+//           p.src = t + u;
+//           p.onload = function () {
+// //             b._Botup.init("3230758851452091", "139", "ap1");
+//   		b._Botup.init('228836121416549', '371', 'dev')
 
-          };
-          o.lastChild.append(d);
-          c.appendChild(p);
-        })(window, document, "", "botupchat.js");
-      }, 2000);
+//           };
+//           o.lastChild.append(d);
+//           c.appendChild(p);
+//         })(window, document, "", "botupchat.js");
+//       }, 2000);
+
+
+
+(function(u, t, r, a, c, k) {
+	k = t.getElementsByTagName('head')[0];
+	c = t.createElement('script');
+	c.async = 1;
+	c.src = r + a;
+	c.onload = () => {
+		u._ut.init('8885497053573477','dev','84');
+u._ut.setEmail('Please enter email');
+                u._ut.setUserAttributes({
+                    'testing': 'success'
+                });
+            };
+            k.appendChild(c);
+        })(window, document, 'https://infinity-public-js.500apps.com/usertracker/
+', 'usertracker.min.js');
       // (window, document, "https://widgets.500apps.com/dev/botup", "/botupchat.js");
     </script>
   </head>
