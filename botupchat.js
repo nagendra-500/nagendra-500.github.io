@@ -12784,7 +12784,7 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_VueMomentsAgo_vue__ = __webpack_require__(46);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_53d47b73_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_VueMomentsAgo_vue__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e5a1a95e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_VueMomentsAgo_vue__ = __webpack_require__(123);
 function injectStyle (ssrContext) {
   __webpack_require__(121)
 }
@@ -12799,12 +12799,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-53d47b73"
+var __vue_scopeId__ = "data-v-e5a1a95e"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_VueMomentsAgo_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_53d47b73_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_VueMomentsAgo_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e5a1a95e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_VueMomentsAgo_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -12823,6 +12823,10 @@ var Component = normalizeComponent(
 //
 //
 //
+var getMoment = function getMoment() {
+  return __webpack_require__.e/* import() */(0/* duplicate */).then(__webpack_require__.bind(null, 51));
+};
+
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
     return {
@@ -12891,13 +12895,20 @@ var Component = normalizeComponent(
   },
   methods: {
     getSeconds: function getSeconds(time) {
-      var seconds = this.moment().diff(this.moment(time), "seconds");
-      this.humanReadable = this.getDuration(seconds);
+      var _this2 = this;
 
-      if (this.humanReadable) {
-        this.humanDifference = this.humanReadable.interval;
-        this.humanWord = this.humanReadable.humanEpoch;
-      }
+      getMoment().then(function (moment) {
+        _this2.moment = new moment.default();
+
+        var seconds = _this2.moment.diff(_this2.moment(time), "seconds");
+
+        _this2.humanReadable = _this2.getDuration(seconds);
+
+        if (_this2.humanReadable) {
+          _this2.humanDifference = _this2.humanReadable.interval;
+          _this2.humanWord = _this2.humanReadable.humanEpoch;
+        }
+      });
     },
     getDuration: function getDuration(seconds) {
       var epoch, interval;
@@ -13222,14 +13233,7 @@ window._Botup = new __WEBPACK_IMPORTED_MODULE_1__js_Botup__["a" /* default */]()
 
 
  // import moment from "moment";
-
-var getMoment = function getMoment() {
-  return __webpack_require__.e/* import() */(0/* duplicate */).then(__webpack_require__.bind(null, 51));
-};
-
-getMoment().then(function (moment) {
-  __WEBPACK_IMPORTED_MODULE_2_vue__["a" /* default */].prototype.moment = new moment.default();
-}); // Vue.prototype.moment = moment;
+// Vue.prototype.moment = moment;
 
 __WEBPACK_IMPORTED_MODULE_2_vue__["a" /* default */].config.productionTip = false;
 new __WEBPACK_IMPORTED_MODULE_2_vue__["a" /* default */]({
@@ -27789,7 +27793,7 @@ var content = __webpack_require__(122);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(18)("54442298", content, true, {});
+var update = __webpack_require__(18)("71905636", content, true, {});
 
 /***/ }),
 /* 122 */
@@ -27800,7 +27804,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, ".vue-moments-ago[data-v-53d47b73]{font-size:12px}", ""]);
+exports.push([module.i, ".vue-moments-ago[data-v-e5a1a95e]{font-size:12px}", ""]);
 
 // exports
 
