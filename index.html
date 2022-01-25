@@ -8,28 +8,23 @@
   </head>
 
   <body>
-    <script>
-      setTimeout(function () {
-        (function (n, j, c, h, a, t) {
-          d = j.createElement("div");
-          d.id = "chatbot";
-          t = j.getElementsByTagName("head")[0];
-          a = j.createElement("script");
-          a.async = 1;
-          a.id = "ninjachat";
-          a.src = c + h;
-          a.onload = function () {
-            n._NC.init("207153581930892", "470", "dev");
-          };
-          j.lastChild.append(d);
-          t.appendChild(a);
-        })(
-          window,
-          document,
-          "https://widgets.500apps.com/dev/ninjachat/",
-          "ninjachat.js"
-        );
-      }, 2000);
+     <script>
+    setTimeout(function(){ 
+      (function(b, o, t, u, p, c){
+    d= o.createElement('div');
+    d.id= 'app';
+  	c = o.getElementsByTagName('head')[0];
+  	p = o.createElement('script');
+  	p.async = 1;
+    p.id= 'botup';
+  	p.src = t + u;
+  	p.onload = function(){
+  		b._Botup.init('1155520161191872', '672', 'dev')
+  	};
+    o.lastChild.append(d);
+  	c.appendChild(p);
+  })(window, document, 'https://widgets.500apps.com/dev/botup/', 'botupchat.js');
+  },2000);
     </script>
 
     <div class="clock">
