@@ -246,6 +246,13 @@ button {
   word-break: break-all !important;
   font-size: 13px !important;
 }
+.cleanslate .ninjachat-footer-section .ql-editor ol,
+.cleanslate .ninjachat-footer-section .ql-editor ul {
+  font-size: 13px !important;
+}
+.cleanslate .ninjachat-footer-section .ql-editor p {
+  font-size: 13px !important;
+}
 .cleanslate .ninjachat .ninjachat-footer-section {
   padding: 5px 0px 0px !important;
   background-color: transparent !important;
