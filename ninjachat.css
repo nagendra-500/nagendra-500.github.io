@@ -890,10 +890,11 @@ button {
 .cleanslate .ninjachat-footer-section .ql-toolbar.ql-snow {
   background-color: #f7f7fb !important;
   width: 100% !important;
-  bottom: -23px !important;
+  bottom: -4.5px !important;
   left: 0px !important;
   padding: 2px !important;
   border-top: 1px solid #efeff1 !important;
+  border-radius: 0px !important;
 }
 .cleanslate .ninjachat .ql-editor.ql-blank::before {
   top: unset !important;
