@@ -343,7 +343,13 @@ button {
   height: 15px;
 }
 .cleanslate .ql-editor li:not(.ql-direction-rtl):before {
-  margin-left: -0.2em !important;
+  margin-left: 0.3em !important;
+}
+.cleanslate .ql-editor ol li:before {
+  content: counter(list-0, decimal) ". ";
+}
+.cleanslate .ql-editor ul > li::before {
+  content: "\2022";
 }
 .margin-zero p {
   margin: 0;
