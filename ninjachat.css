@@ -175,8 +175,9 @@ button {
   background: none;
   border: unset;
 }
-.ninjachat-footer-section .ql-editor.ql-blank::before {
-  font-style: normal;
+.cleanslate .ninjachat-footer-section .ql-editor.ql-blank::before {
+  font-style: normal !important;
+  left: 15px !important;
 }
 .margin-zero p {
   margin: 0;
@@ -311,7 +312,7 @@ button {
 .ninjachat-footer-section .ql-toolbar.ql-snow .ql-formats .ql-picker {
   top: 4px;
 }
-.ninjachat-footer-section .ql-editor {
+.cleanslate .ninjachat-footer-section .ql-editor {
   max-height: 39px !important;
   min-height: 39px !important;
   padding-top: 8px !important;
@@ -321,11 +322,11 @@ button {
   padding-bottom: 0px !important;
   margin-bottom: 0px !important;
 }
-.ninjachat-footer-section .ql-editor p span {
+.cleanslate .ninjachat-footer-section .ql-editor p span {
   color: #000 !important;
   font-size: 12px !important;
 }
-.ninjachat-footer-section .ql-container {
+.cleanslate .ninjachat-footer-section .ql-container {
   min-height: unset !important;
   max-height: 35px;
   font-family: "Poppins", sans-serif;
@@ -341,20 +342,20 @@ button {
   width: 15px;
   height: 15px;
 }
-.ql-editor li:not(.ql-direction-rtl):before {
+.cleanslate .ql-editor li:not(.ql-direction-rtl):before {
   margin-left: -0.2em !important;
 }
 .margin-zero p {
   margin: 0;
 }
-.ql-editor::-webkit-scrollbar {
+.cleanslate .ql-editor::-webkit-scrollbar {
   width: 3px;
 }
-.ql-editor::-webkit-scrollbar-thumb {
+.cleanslate .ql-editor::-webkit-scrollbar-thumb {
   background: #d2d2d2;
   border-radius: 5px;
 }
-.ql-editor::-webkit-scrollbar-track {
+.cleanslate .ql-editor::-webkit-scrollbar-track {
   box-shadow: inset 20px 20px 20px #fff;
   border-radius: 0px;
 }
@@ -885,7 +886,7 @@ button {
 .cleanslate .ninjachat-footer-section .ql-toolbar.ql-snow {
   background-color: #f7f7fb !important;
   width: 100% !important;
-  bottom: -5px !important;
+  bottom: -4px !important;
   left: 0px !important;
   padding: 2px !important;
   border-top: 1px solid #efeff1 !important;
