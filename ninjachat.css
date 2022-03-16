@@ -246,7 +246,7 @@ button {
   word-break: break-all !important;
 }
 .cleanslate .ninjachat .ninjachat-footer-section {
-  padding: 15px 0px 0px !important;
+  padding: 6px 0px 0px !important;
   background-color: transparent !important;
 }
 .ninjachat-chat {
@@ -323,6 +323,8 @@ button {
   width: 275px;
   background-color: transparent !important;
   padding-left: 0px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
 }
 .ninjachat-footer-section .ql-editor p span {
   color: #000 !important;
@@ -900,12 +902,6 @@ button {
 .ninjachat .ql-editor p {
   font-size: 13px !important;
 }
-.cleanslate .ninjachat-chat {
-  right: 20px !important;
-}
 .cleanslate .ninjachat-chat .ninjachat-footer-500app {
   border-top: 1px solid #efeff1 !important;
-}
-.cleanslate .main-content .ninjachat-chat {
-  right: 20px !important;
 }
