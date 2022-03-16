@@ -246,8 +246,8 @@ button {
   word-break: break-all !important;
   font-size: 13px !important;
 }
-.cleanslate .ql-editor ol li,
-.cleanslate .ql-editor ul li {
+.cleanslate ol,
+.cleanslate ul {
   font-size: 13px !important;
 }
 .cleanslate .message-text.text-break ol,
