@@ -151,7 +151,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px !important;
+  height: 80px !important;
 }
 .ninjachat-footer-section textarea {
   box-sizing: border-box;
@@ -231,7 +231,7 @@ button {
 }
 .ninjachat .ninjachat-footer-icons {
   display: inline !important;
-  height: 75px !important;
+  height: 80px !important;
 }
 .cleanslate .ninjachat .margin-zero {
   word-break: break-all !important;
@@ -246,7 +246,7 @@ button {
   word-break: break-all !important;
 }
 .cleanslate .ninjachat .ninjachat-footer-section {
-  padding: 6px 0px 0px !important;
+  padding: 5px 0px 0px !important;
   background-color: transparent !important;
 }
 .ninjachat-chat {
@@ -320,7 +320,7 @@ button {
   max-height: 39px !important;
   min-height: 39px !important;
   padding-top: 8px !important;
-  width: 275px;
+  width: 290px;
   background-color: transparent !important;
   padding-left: 0px !important;
   padding-bottom: 0px !important;
@@ -890,7 +890,7 @@ button {
 .cleanslate .ninjachat-footer-section .ql-toolbar.ql-snow {
   background-color: #f7f7fb !important;
   width: 100% !important;
-  bottom: -4.5px !important;
+  bottom: -5px !important;
   left: 0px !important;
   padding: 2px !important;
   border-top: 1px solid #efeff1 !important;
