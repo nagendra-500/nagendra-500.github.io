@@ -1,7 +1,7 @@
 @import url("https://infinity.500apps.com/fonts/feather/feather.css");
-body {
+/*body {
   font-family: Arial, Helvetica, sans-serif;
-}
+}*/
 /* The Modal (background) */
 .ninjachat .modal {
   display: none; /* Hidden by default */
@@ -151,7 +151,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 63px !important;
+  height: 75px !important;
 }
 .ninjachat-footer-section textarea {
   box-sizing: border-box;
@@ -205,10 +205,13 @@ button {
 .ninjachat-btn-light.focus {
   box-shadow: 0 0 0 0.2rem rgb(130 138 145 / 0%) !important;
 }
-.ninjachat .ninjachat-items-center {
+.cleanslate .ninjachat .ninjachat-items-center {
   border: 0px !important;
   padding: 0px !important;
   margin: 0px !important;
+}
+.cleanslate .ninjachat .ninjachat-footer-icons {
+  width: 100% !important;
 }
 .ninjachat .chat-body-height::-webkit-scrollbar {
   width: 5px;
@@ -228,23 +231,30 @@ button {
 }
 .ninjachat .ninjachat-footer-icons {
   display: inline !important;
-  height: 70px !important;
+  height: 75px !important;
 }
-.ninjachat .margin-zero {
+.cleanslate .ninjachat .margin-zero {
   word-break: break-all !important;
 }
-.ninjachat .ninjachat-send-img {
-  bottom: 3px !important;
-  width: 18px !important;
-  height: 18px !important;
+.cleanslate .ninjachat .ninjachat-send-img {
+  bottom: 20px !important;
+  width: 22px !important;
+  height: 22px !important;
+  right: 15px !important;
 }
-.ninjachat .ninjachat-footer-section {
-  padding: 15px 20px 0px !important;
+.cleanslate .message-text.text-break p {
+  word-break: break-all !important;
+}
+.cleanslate .ninjachat .ninjachat-footer-section {
+  padding: 15px 0px 0px !important;
+  background-color: transparent !important;
 }
 .ninjachat-chat {
   right: 20px !important;
 }
-
+.ninjachat-footer-section .ql-toolbar.ql-snow .ql-formats {
+  margin-left: 5px !important;
+}
 .ql-toolbar.ql-snow + .ql-container.ql-snow {
   border: unset;
   margin-top: 18px;
@@ -252,6 +262,10 @@ button {
 }
 .flex-column-reverse {
   width: 320px;
+}
+.ninjachat-footer-section .flex-column-reverse {
+  padding: 8px 15px !important;
+  border-top: 1px solid #e9e9f1 !important;
 }
 .ninjachat-footer-section {
   border-bottom-left-radius: -4px;
@@ -292,29 +306,33 @@ button {
   left: 0px !important;
 }
 .ninjachat-footer-section .ql-toolbar.ql-snow {
-  border: 0px solid #ccc;
-  box-sizing: border-box;
-  padding: 0px;
-  position: absolute;
-  bottom: -3px !important;
+  border: 0px solid #ccc !important;
+  box-sizing: border-box !important;
+  padding: 0px !important;
+  position: absolute !important;
+  bottom: -10px !important;
   left: -7px !important;
 }
 .ninjachat-footer-section .ql-toolbar.ql-snow .ql-formats .ql-picker {
   top: 4px;
 }
 .ninjachat-footer-section .ql-editor {
-  max-height: 39px;
-  min-height: 39px;
+  max-height: 39px !important;
+  min-height: 39px !important;
   padding-top: 8px !important;
   width: 275px;
+  background-color: transparent !important;
+  padding-left: 0px !important;
 }
 .ninjachat-footer-section .ql-editor p span {
   color: #000 !important;
   font-size: 12px !important;
 }
 .ninjachat-footer-section .ql-container {
+  min-height: unset !important;
   max-height: 35px;
   font-family: "Poppins", sans-serif;
+  overflow: hidden !important;
 }
 .ninjachat-footer-section .ql-snow.ql-toolbar button svg,
 .ql-snow .ql-toolbar button svg {
@@ -854,16 +872,40 @@ button {
     padding: 17px !important;
   }
 }
-@media (max-width: 575.96px){
-    .ninjachat .modal .modal-content {
+@media (max-width: 575.96px) {
+  .ninjachat .modal .modal-content {
     margin: 10px !important;
   }
   .ninjachat .modal-content .close {
-      right:10px !important;
-      top:3px !important;
+    right: 10px !important;
+    top: 3px !important;
   }
 }
 .ninjachat input[type="radio" i] {
-    background-color: initial;
-    appearance: auto !important;
+  background-color: initial;
+  appearance: auto !important;
+}
+.cleanslate .ninjachat-footer-section .ql-toolbar.ql-snow {
+  background-color: #f7f7fb !important;
+  width: 100% !important;
+  bottom: -23px !important;
+  left: 0px !important;
+  padding: 2px !important;
+  border-top: 1px solid #efeff1 !important;
+}
+.cleanslate .ninjachat .ql-editor.ql-blank::before {
+  top: unset !important;
+  font-weight: normal !important;
+}
+.ninjachat .ql-editor p {
+  font-size: 13px !important;
+}
+.cleanslate .ninjachat-chat {
+  right: 20px !important;
+}
+.cleanslate .ninjachat-chat .ninjachat-footer-500app {
+  border-top: 1px solid #efeff1 !important;
+}
+.cleanslate .main-content .ninjachat-chat {
+  right: 20px !important;
 }
