@@ -250,7 +250,7 @@ button {
 .cleanslate ul {
   font-size: 13px !important;
 }
-.cleanslate .ql-tooltip.ql-editing {
+.cleanslate .ql-snow .ql-tooltip.ql-editing {
   position: absolute !important;
   top: -10px !important;
   left: 8px !important;
