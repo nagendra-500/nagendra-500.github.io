@@ -242,6 +242,10 @@ button {
   height: 22px !important;
   right: 15px !important;
 }
+.cleanslate .ninjachat .ql-editor.ql-blank p {
+  position: absolute !important;
+  left: 13px !important;
+}
 .cleanslate .message-text.text-break p {
   word-break: break-all !important;
 }
