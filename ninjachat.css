@@ -242,7 +242,7 @@ button {
   height: 22px !important;
   right: 15px !important;
 }
-.cleanslate .ninjachat .ql-editor.ql-blank p {
+.cleanslate .ninjachat .ql-editor p {
   position: absolute !important;
   left: 13px !important;
 }
