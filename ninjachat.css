@@ -255,10 +255,10 @@ button {
 .ninjachat-footer-section .ql-toolbar.ql-snow .ql-formats {
   margin-left: 5px !important;
 }
-.ql-toolbar.ql-snow + .ql-container.ql-snow {
+.cleanslate .ninjachat .ql-toolbar.ql-snow + .ql-container.ql-snow {
   border: unset;
   margin-top: 18px;
-  margin-left: -12px;
+  margin-left: -12px !important;
 }
 .flex-column-reverse {
   width: 320px;
