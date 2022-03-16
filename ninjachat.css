@@ -244,6 +244,7 @@ button {
 }
 .cleanslate .message-text.text-break p {
   word-break: break-all !important;
+  font-size: 13px !important;
 }
 .cleanslate .ninjachat .ninjachat-footer-section {
   padding: 5px 0px 0px !important;
@@ -346,10 +347,10 @@ button {
   margin-left: 0.3em !important;
 }
 .cleanslate .ql-editor ol li:before {
-  content: counter(list-0, decimal) ". ";
+  content: counter(list-0, decimal) ". " !important;
 }
 .cleanslate .ql-editor ul > li::before {
-  content: "\2022";
+  content: "\2022" !important;
 }
 .margin-zero p {
   margin: 0;
