@@ -177,7 +177,6 @@ button {
 }
 .ninjachat-footer-section .ql-editor.ql-blank::before {
   font-style: normal;
-  left: 0px !important;
 }
 .margin-zero p {
   margin: 0;
@@ -229,7 +228,7 @@ button {
   width: 100% !important;
   resize: none !important;
 }
-.ninjachat .ninjachat-footer-icons {
+.cleanslate .ninjachat .ninjachat-footer-icons {
   display: inline !important;
   height: 80px !important;
 }
@@ -241,10 +240,6 @@ button {
   width: 22px !important;
   height: 22px !important;
   right: 15px !important;
-}
-.cleanslate .ninjachat .ql-editor p {
-  position: absolute !important;
-  left: 13px !important;
 }
 .cleanslate .message-text.text-break p {
   word-break: break-all !important;
@@ -304,10 +299,6 @@ button {
   top: 50px;
   width: 17px;
   cursor: pointer;
-}
-.ninjachat-footer-section .ql-editor.ql-blank::before {
-  font-style: normal;
-  left: 0px !important;
 }
 .ninjachat-footer-section .ql-toolbar.ql-snow {
   border: 0px solid #ccc !important;
@@ -903,11 +894,10 @@ button {
 .cleanslate .ninjachat .ql-editor.ql-blank::before {
   top: unset !important;
   font-weight: normal !important;
-  position: absolute !important;
-  left: 13px !important;
 }
-.ninjachat .ql-editor p {
+.cleanslate .ninjachat .ql-editor p {
   font-size: 13px !important;
+  margin-left: 13px !important;
 }
 .cleanslate .ninjachat-chat .ninjachat-footer-500app {
   border-top: 1px solid #efeff1 !important;
