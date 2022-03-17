@@ -63,12 +63,21 @@
 .ninjachat-tahoma{
   font-family: Tahoma, sans-serif !important;
 }
-.ninjachat-helvetica{
-  font-family: Helvetica, sans-serif !important;
+.ninjachat-trebuchet{
+  font-family: Trebuchet MS, sans-serif !important;
 }
-.ninjachat-helvetica{
-  font-family: Helvetica, sans-serif !important;
+.ninjachat-times-new-roman{
+  font-family: Times New Roman, serif !important;
 }
-.ninjachat-helvetica{
-  font-family: Helvetica, sans-serif !important;
+.ninjachat-georgia{
+  font-family: Georgia, serif !important;
+}
+.ninjachat-garamond{
+  font-family: Garamond, serif !important;
+}
+.ninjachat-courier-new{
+  font-family: Courier New, monospace !important;
+}
+.ninjachat-brush-script{
+  font-family: Brush Script MT, cursive !important;
 }
