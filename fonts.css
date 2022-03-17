@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: infinity-opensans;
+  font-family: infinity-opensans-semibold;
   src: url(https://my.ap1.500apps.com/pcors?url=https://widgets.500apps.com/fonts/OpenSans-SemiBold.ttf);
   unicode-range: U+000-5FF;
   font-style: normal;
@@ -27,7 +27,7 @@
 }
 
 @font-face {
-  font-family: infinity-poppins;
+  font-family: infinity-poppins-semibold;
   src: url(https://my.ap1.500apps.com/pcors?url=https://widgets.500apps.com/fonts/Poppins-SemiBold.ttf);
   unicode-range: U+000-5FF;
   font-style: normal;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-  font-family: infinity-roboto;
+  font-family: infinity-roboto-bold;
   src: url(https://my.ap1.500apps.com/pcors?url=https://widgets.500apps.com/fonts/Roboto-Bold.ttf);
   unicode-range: U+000-5FF;
   font-style: normal;
