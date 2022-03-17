@@ -23,7 +23,7 @@
   src: url(https://my.ap1.500apps.com/pcors?url=https://widgets.500apps.com/fonts/Poppins-Regular.ttf);
   unicode-range: U+000-5FF;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
@@ -31,7 +31,7 @@
   src: url(https://my.ap1.500apps.com/pcors?url=https://widgets.500apps.com/fonts/Poppins-SemiBold.ttf);
   unicode-range: U+000-5FF;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .ninjachat-poppins {
@@ -43,7 +43,7 @@
   src: url(https://my.ap1.500apps.com/pcors?url=https://widgets.500apps.com/fonts/Roboto-Regular.ttf);
   unicode-range: U+000-5FF;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   src: url(https://my.ap1.500apps.com/pcors?url=https://widgets.500apps.com/fonts/Roboto-Bold.ttf);
   unicode-range: U+000-5FF;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .ninjachat-roboto {
