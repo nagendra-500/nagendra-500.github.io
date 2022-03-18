@@ -1,4 +1,4 @@
-webpackJsonp([1,0],Array(53).concat([function(c,M,a){"use strict";Object.defineProperty(M,"__esModule",{value:!0});var e=a(144),o=a(211),n=a(197),t=a(236),i=a(240),r=a(249),b=a(169);
+webpackJsonp_NinjaChat([1,0],Array(53).concat([function(c,M,a){"use strict";Object.defineProperty(M,"__esModule",{value:!0});var e=a(144),o=a(211),n=a(197),t=a(236),i=a(240),r=a(249),b=a(169);
 //! moment.js
 //! version : 2.29.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
