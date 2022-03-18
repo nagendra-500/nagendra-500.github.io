@@ -1,4 +1,4 @@
-@import url("https://infinity.500apps.com/fonts/feather/feather.css");
+@import url("https://infinity.500apps.com/fonts/feather/feather.css?v=infinity_release_tag");
 /*body {
   font-family: Arial, Helvetica, sans-serif;
 }*/
@@ -635,8 +635,12 @@ button {
   border-radius: 0px !important;
 }
 .mobile-chat-widget.cleanslate .ninjachat-chat .ninjachat-footer-section {
-  padding: 15px 20px 0 !important;
-  height: 55px !important;
+  padding: 15px 0px 0 !important;
+  height: 75px !important;
+}
+.mobile-chat-widget.cleanslate .flex-column-reverse {
+  width: 100% !important;
+  padding: 8px 25px !important;
 }
 .mobile-chat-widget.cleanslate .main-content .ninjachat-header-profile-section {
   border-top-left-radius: 0 !important;
@@ -778,15 +782,16 @@ button {
   bottom: 0px;
 }
 .mobile-chat-widget.cleanslate .ninjachat-footer-section .ql-editor {
-  max-height: 35px;
-  min-height: 35px;
+  max-height: 40px !important;
+  min-height: 40px !important;
+  width: 95% !important;
 }
 .mobile-chat-widget.cleanslate .ninjachat-footer-section .ql-toolbar.ql-snow {
   bottom: 1px !important;
 }
 .mobile-chat-widget.cleanslate .ninjachat .ninjachat-send-img {
-  bottom: 8px !important;
-  right: -9px !important;
+  bottom: 43px !important;
+  right: -15px !important;
 }
 .cleanslate .ql-files {
   padding-left: 0 !important;
