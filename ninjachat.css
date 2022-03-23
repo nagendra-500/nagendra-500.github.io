@@ -649,12 +649,12 @@ button {
   padding: 12px 15px !important;
   height: 35px !important;
 }
-.mobile-chat-widget.cleanslate .main-content .ninjachat-history-icon-bg {
+.mobile-chat-widget.cleanslate .main-content .ninjachat-widget-close {
   width: 28px !important;
   height: 28px !important;
   background-color: transparent !important;
 }
-.mobile-chat-widget.cleanslate .main-content .ninjachat-widget-history .ninjachat-history-icon {
+.mobile-chat-widget.cleanslate .main-content .ninjachat-widget-history .ninjachat-close-icon {
   width: 15px !important;
   height: 15px !important;
   right: 16px !important;
@@ -688,18 +688,18 @@ button {
   width: 30px !important;
   height: 30px !important;
 }
-.cleanslate .main-content .ninjachat-chat .ninjachat-history-icon-bg {
+.cleanslate .main-content .ninjachat-chat .ninjachat-widget-close {
   background-color: transparent !important;
   width: 25px !important;
   height: 25px !important;
 }
-.cleanslate .main-content .ninjachat-chat .ninjachat-history-icon-bg .ninjachat-history-icon {
+.cleanslate .main-content .ninjachat-chat .ninjachat-widget-close .ninjachat-close-icon {
   width: 13px !important;
   height: 13px !important;
   top: 25px !important;
   opacity: 0.75;
 }
-.cleanslate .main-content .ninjachat-chat .ninjachat-history-icon-bg .ninjachat-history-icon:hover {
+.cleanslate .main-content .ninjachat-chat .ninjachat-widget-close .ninjachat-close-icon:hover {
   opacity: 1;
 }
 .cleanslate .ninjachat-chat .form-border {
@@ -747,7 +747,7 @@ button {
 .cleanslate .modal-prevent-closing .modal-cross-icon:hover {
   opacity: 0.75 !important;
 }
-.cleanslate .ninjachat-history-icon {
+.cleanslate .ninjachat-close-icon {
   width: 14px !important;
   height: 18px !important;
   cursor: pointer !important;
