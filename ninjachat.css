@@ -281,7 +281,7 @@ button {
   margin-left: -12px !important;
 }
 .flex-column-reverse {
-  width: 320px;
+  width: 330px;
 }
 .ninjachat-footer-section .flex-column-reverse {
   padding: 8px 15px !important;
@@ -349,8 +349,8 @@ button {
 .cleanslate .ninjachat-footer-section .ql-container {
   min-height: unset !important;
   max-height: 35px;
-  font-family: "Poppins", sans-serif;
   overflow: hidden !important;
+  font-family: inherit !important;
 }
 .ninjachat-footer-section .ql-snow.ql-toolbar button svg,
 .ql-snow .ql-toolbar button svg {
@@ -615,6 +615,7 @@ button {
 }
 .cleanslate .ninjachat-chat .ninjachat-bg-img-section {
   max-height: calc(100vh - 410px) !important;
+  overflow-x: hidden !important;
 }
 .mobile-chat-widget.cleanslate .main-content .ninjachat-chat {
   width: 100% !important;
@@ -767,7 +768,7 @@ button {
   background-color: #2c7be5;
   border-color: #2c7be5;
   color: #fff;
-  padding: 6px 12px;
+  padding: 12px 12px;
   border-radius: 4px;
   margin-right: 10px;
 }
@@ -933,4 +934,31 @@ button {
 }
 .cleanslate .ninjachat-chat .ninjachat-footer-500app {
   border-top: 1px solid #efeff1 !important;
+}
+.cleanslate .nc-online-form,
+.cleanslate .nc-offline-form {
+  background: #fff;
+  padding: 12px !important;
+  box-shadow: 0.15rem 0.15rem 0.75rem 0.15rem rgb(18 38 63 / 8%) !important;
+  border-radius: 6px !important;
+}
+.cleanslate .primary-margin {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.cleanslate textarea {
+  resize: none;
+}
+.cleanslate .validation-text {
+  text-align: center;
+}
+.cleanslate .validation-text .valid-text-color {
+  color: red !important;
+  margin-top: 10px !important;
+}
+.cleanslate .ninjachat-chat .ninjachat pre {
+  font-family: inherit !important;
+  font-size: 13px !important;
+  word-break: break-all !important;
+  white-space: pre-wrap !important;
 }
