@@ -696,7 +696,7 @@ button {
 .cleanslate .main-content .ninjachat-chat .ninjachat-widget-close .ninjachat-close-icon {
   width: 13px !important;
   height: 13px !important;
-  top: 25px !important;
+  /* top: 25px !important; */
   opacity: 0.75;
 }
 .cleanslate .main-content .ninjachat-chat .ninjachat-widget-close .ninjachat-close-icon:hover {
@@ -808,11 +808,9 @@ button {
 }
 .cleanslate .main-content .ninjachat-chat .ninjachat-minimize-icon {
   width: 23px !important;
-  top: 20px !important;
+  margin-top: 3px !important;
   opacity: 0.75;
   filter: invert(1);
-  position: absolute;
-  right: 50px;
 }
 .cleanslate .main-content .ninjachat-chat .ninjachat-minimize-icon:hover {
   opacity: 1;
@@ -961,4 +959,7 @@ button {
   font-size: 13px !important;
   word-break: break-all !important;
   white-space: pre-wrap !important;
+}
+.cleanslate .infinity-chat-icon .ninjachat-icon {
+  right: 75px !important;
 }
