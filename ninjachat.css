@@ -808,7 +808,7 @@ button {
 }
 .cleanslate .main-content .ninjachat-chat .ninjachat-minimize-icon {
   width: 23px !important;
-  margin-top: 3px !important;
+  margin-top: -3px !important;
   opacity: 0.75;
   filter: invert(1);
 }
