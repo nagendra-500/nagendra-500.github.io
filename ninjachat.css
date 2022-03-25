@@ -808,7 +808,7 @@ button {
 }
 .cleanslate .main-content .ninjachat-chat .ninjachat-minimize-icon {
   width: 23px !important;
-  margin-top: -3px !important;
+  margin-top: 3px !important;
   opacity: 0.75;
   filter: invert(1);
 }
@@ -970,4 +970,8 @@ button {
   height: 25px !important;
   color: #fff;
   border-radius: 4px !important;
+}
+.ninjachat-help-text {
+  padding: 5px 16px !important;
+  color: #005ffb !important;
 }
