@@ -64,9 +64,8 @@
   position: absolute;
   right: 14px;
   font-size: 19px;
-  top: 17px;
+  top: 8px;
   font-weight: 500;
-  right: 20px;
 }
 .mobile-chat-widget .ninjachat .ninjachat-modal-content .feedback-title {
   font-size: 0.9rem !important;
@@ -150,7 +149,7 @@
   padding: 20px !important;
 }
 .ninjachat .ninjachat-modal-content .feedback-title {
-  font-size: 0.9375rem !important;
+  font-size: 0.9rem !important;
 }
 .ninjachat-footer-section {
   border-bottom-left-radius: -4px;
@@ -768,8 +767,8 @@ button {
   height: 18px !important;
   cursor: pointer !important;
   position: absolute;
-  right: 28px !important;
-  top: 24px !important;
+  right: 23px !important;
+  top: 25px !important;
   filter: invert(1);
 }
 .cleanslate .ninjachat .btn-secondary {
