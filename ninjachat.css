@@ -62,9 +62,9 @@
 }
 .ninjachat .ninjachat-modal-content .close {
   position: absolute;
-  right: 14px;
+  right: 20px;
   font-size: 19px;
-  top: 8px;
+  top: 17px;
   font-weight: 500;
 }
 .mobile-chat-widget .ninjachat .ninjachat-modal-content .feedback-title {
@@ -767,8 +767,8 @@ button {
   height: 18px !important;
   cursor: pointer !important;
   position: absolute;
-  right: 23px !important;
-  top: 25px !important;
+  right: 22px !important;
+  top: 26px !important;
   filter: invert(1);
 }
 .cleanslate .ninjachat .btn-secondary {
