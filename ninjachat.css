@@ -153,6 +153,9 @@
   align-items: center;
   height: 80px !important;
 }
+.mobile-chat-widget .ninjachat-footer-section .ninjachat-text-area-icons {
+  height: 90px !important;
+}
 .ninjachat-footer-section textarea {
   box-sizing: border-box;
   padding: 0px 50px 0px 0px;
@@ -281,7 +284,7 @@ button {
   margin-left: -12px !important;
 }
 .flex-column-reverse {
-  width: 330px;
+  width: 320px;
 }
 .ninjachat-footer-section .flex-column-reverse {
   padding: 8px 15px !important;
@@ -636,11 +639,12 @@ button {
   border-radius: 0px !important;
 }
 .mobile-chat-widget.cleanslate .ninjachat-chat .ninjachat-footer-section {
-  padding: 15px 0px 0 !important;
+  padding: 5px 0px 0 !important;
   height: 75px !important;
+  background-color: #ffffff !important;
 }
 .mobile-chat-widget.cleanslate .flex-column-reverse {
-  width: 100% !important;
+  width: 92% !important;
   padding: 8px 25px !important;
 }
 .mobile-chat-widget.cleanslate .main-content .ninjachat-header-profile-section {
@@ -671,7 +675,7 @@ button {
 }
 .mobile-chat-widget.cleanslate .ninjachat-footer-icons {
   display: block !important;
-  width: 95% !important;
+  width: 100% !important;
 }
 .mobile-chat-widget.cleanslate .ninjachat-chat .ninjachat-footer-section .bg-input-color {
   width: 100% !important;
@@ -792,7 +796,7 @@ button {
 }
 .mobile-chat-widget.cleanslate .ninjachat .ninjachat-send-img {
   bottom: 43px !important;
-  right: -15px !important;
+  right: 12px !important;
 }
 .cleanslate .ql-files {
   padding-left: 0 !important;
@@ -808,7 +812,7 @@ button {
 }
 .cleanslate .main-content .ninjachat-chat .ninjachat-minimize-icon {
   width: 23px !important;
-  margin-top: 3px !important;
+  margin-top: -5px !important;
   opacity: 0.75;
   filter: invert(1);
 }
