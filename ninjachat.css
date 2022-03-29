@@ -19,7 +19,7 @@
 /* Modal Content */
 .cleanslate .ninjachat .ninjachat-modal-header {
   background-color: #fff !important;
-  padding: 1.5rem !important;
+  padding: 1.25rem !important;
   border-top-left-radius: 4px !important;
   border-top-right-radius: 4px !important;
 }
@@ -33,7 +33,7 @@
   pointer-events: auto;
   background-clip: padding-box;
   border-radius: 0.5rem;
-  max-width: 600px;
+  max-width: 800px;
 }
 .ninjachat .ninjachat-modal .border-top {
   justify-content: start;
@@ -57,16 +57,19 @@
 .ninjachat .ml-auto {
   margin-left: auto;
 }
-.ninjachat .ninjachat-modal-content p {
-  font-size: 0.9375rem !important;
+.ninjachat .ninjachat-modal-content {
+  font-size: 0.8375rem !important;
 }
 .ninjachat .ninjachat-modal-content .close {
   position: absolute;
   right: 14px;
   font-size: 19px;
-  top: 8px;
+  top: 17px;
   font-weight: 500;
-  right: 18px;
+  right: 20px;
+}
+.mobile-chat-widget .ninjachat .ninjachat-modal-content .feedback-title {
+  font-size: 0.9rem !important;
 }
 .ninjachat .ninjachat-form-control {
   display: block;
@@ -141,12 +144,14 @@
 .ninjachat .ninjachat-label label {
   color: #363636 !important;
 }
-.ninjachat .feedback-container {
+.cleanslate .ninjachat .feedback-container {
   overflow: auto;
   max-height: 500px;
-  padding-right: 10px !important;
+  padding: 20px !important;
 }
-
+.ninjachat .ninjachat-modal-content .feedback-title {
+  font-size: 0.9375rem !important;
+}
 .ninjachat-footer-section {
   border-bottom-left-radius: -4px;
   border-bottom-right-radius: -10px;
@@ -665,8 +670,8 @@ button {
 .mobile-chat-widget.cleanslate .main-content .ninjachat-widget-history .ninjachat-close-icon {
   width: 15px !important;
   height: 15px !important;
-  right: 16px !important;
-  top: 23px !important;
+  right: 20px !important;
+  top: 20px !important;
 }
 .mobile-chat-widget.cleanslate .ninjachat-close-icon {
   position: absolute;
@@ -735,10 +740,13 @@ button {
 }
 .cleanslate .ninjachat .border-top {
   border-top: 1px solid #f1f1f1 !important;
-  margin-top: 10px !important;
-  padding-top: 15px !important;
   display: flex;
   justify-content: end;
+  padding: 20px !important;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-top: 0px !important;
 }
 .cleanslate .modal-prevent-closing .heading-font {
   font-size: 15px !important;
@@ -816,7 +824,7 @@ button {
 }
 .cleanslate .main-content .ninjachat-chat .ninjachat-minimize-icon {
   width: 23px !important;
-  margin-top: 1px !important;
+  margin-top: 0px !important;
   opacity: 0.75;
   filter: invert(1);
 }
@@ -883,14 +891,9 @@ button {
 .ninjachat .ninjachat-reply {
   text-align: right !important;
 }
-.thin-scroll:hover {
-  overflow-y: overlay !important;
+.cleanslate .thin-scroll::-webkit-scrollbar {
+  width: 7px;
 }
-
-.thin-scroll::-webkit-scrollbar {
-  width: 3px;
-}
-
 .thin-scroll::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px #f9fbfd;
   border-radius: 5px;
@@ -902,20 +905,6 @@ button {
 }
 .ninjachat .ninjachat-mobile-space .d-inline-block {
   padding: 0.5rem 1.2rem !important;
-}
-@media (min-width: 340px) and (max-width: 768px) {
-  .ninjachat .ninjachat-modal .ninjachat-modal-content {
-    padding: 17px !important;
-  }
-}
-@media (max-width: 575.96px) {
-  .ninjachat .ninjachat-modal .ninjachat-modal-content {
-    margin: 10px !important;
-  }
-  .ninjachat .ninjachat-modal-content .close {
-    right: 10px !important;
-    top: 3px !important;
-  }
 }
 .ninjachat input[type="radio" i] {
   background-color: initial;
