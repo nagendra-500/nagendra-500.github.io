@@ -245,7 +245,7 @@ button {
   height: 80px !important;
 }
 .cleanslate .ninjachat .margin-zero {
-  word-break: break-all !important;
+  word-break: break-word !important;
 }
 .cleanslate .ninjachat .ninjachat-send-img {
   bottom: 40px !important;
@@ -254,7 +254,7 @@ button {
   right: 15px !important;
 }
 .cleanslate .message-text.text-break p {
-  word-break: break-all !important;
+  word-break: break-word !important;
   font-size: 13px !important;
 }
 .cleanslate ol,
@@ -953,8 +953,7 @@ button {
 .cleanslate .ninjachat-chat .ninjachat pre {
   font-family: inherit !important;
   font-size: 13px !important;
-  word-break: break-all !important;
-  white-space: pre-wrap !important;
+  word-break: break-word !important;
 }
 .cleanslate .infinity-chat-icon .ninjachat-icon {
   right: 75px !important;
