@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Toolbar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+        .ninjacapture-toolbar-main {
+            /* width: 100%;
+            min-width: 500px; */
+            background-color: #1d273d00;
+            height: 60px;
+            border-radius: 5px;
+            /* max-width: 500px; */
+            position: fixed;
+            bottom: 15px;
+            left: 35%;
+            padding: 12px;
+            font-family: 'Lato', sans-serif;
+            font-size: 11px;
+            letter-spacing: 0.33px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .ninjacapture-toolbar-main .ninjacapture-toolbar-body {
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+
+        .ninjacapture-toolbar-main .ninjacapture-toolbar-body .ninjacapture-toolbar-boxs {
+            height: 60px;
+            margin-right: 8px;
+            text-align: center;
+            width: 60px;
+        }
+
+        .ninjacapture-toolbar-main .ninjacapture-toolbar-play-stop {
+            background: #12263f;
+            display: flex;
+            border-radius: 8px;
+            box-shadow: 0rem 0rem 1rem 0rem rgb(205 205 205) !important;
+        }
+
+        .ninjacapture-toolbar-main .play-block {
+            border-right: 1px solid #1E3A5C;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border-left: 1px solid #1E3A5C;
+            cursor: pointer;
+        }
+
+        .ninjacapture-toolbar-main .paly-title {
+            margin: 0;
+            margin-top: 5px;
+            color: #6E84A3;
+        }
+
+        .ninjacapture-toolbar-main .stop-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .ninjacapture-toolbar-main .stop-title {
+            margin: 0;
+            margin-top: 5px;
+            color: #6E84A3;
+        }
+
+        .ninjacapture-toolbar-main .stop-block:hover .stop-title,
+        .ninjacapture-toolbar-main .play-block:hover .paly-title {
+            color: #fff;
+        }
+
+        .ninjacaptue-toolbar-main-box {
+            background: #12263f;
+            display: flex;
+            border-radius: 8px;
+            margin-left: 10px;
+            box-shadow: 0rem 0rem 1rem 0rem rgb(205 205 205) !important;
+        }
+
+        .ninjacapture-toolbar-main .ninjacapture-toolbar-inner-box {
+            border-right: 1px solid #1E3A5C;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .ninjacapture-toolbar-main .ninjacaptue-toolbar-main-box .ninjacapture-toolbar-inner-box .title-color-size {
+            margin: 0;
+            margin-top: 5px;
+            color: #6E84A3;
+        }
+
+        .ninjacapture-toolbar-main .ninjacapture-toolbar-body .ninjacaptue-toolbar-main-box .ninjacapture-toolbar-inner-box:hover .title-color-size {
+            color: #fff;
+        }
+
+        .ninjacapture-toolbar-main .ninjacapture-toolbar-inner-box:last-child {
+            border-right: 0px solid #1E3A5C;
+        }
+
+        .ninjacapture-toolbar-main .ninjacapture-toolbar-body img {
+            cursor: pointer;
+            width: 22px;
+            height: 22px;
+            opacity: 0.8;
+        }
+
+        .ninjacapture-toolbar-main .ninjacapture-toolbar-inner-box:hover img,
+        .ninjacapture-toolbar-main .play-block:hover img,
+        .ninjacapture-toolbar-main .stop-block:hover img {
+            opacity: 1 !important;
+        }
+
+        .ninjacapture-toolbar-main .drag-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 5px;
+        }
+
+        .ninjacapture-toolbar-main .drag-block img {
+            cursor: all-scroll !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ninjacapture-toolbar-main">
+        <div class="ninjacapture-toolbar-body">
+            <div class="ninjacapture-toolbar-play-stop">
+                <div class="drag-block">
+                    <img src="drag.svg" />
+                </div>
+                <div class="play-block">
+                    <img src="play.svg" />
+                    <p class="paly-title">Play</p>
+                </div>
+                <div class="stop-block">
+                    <img src="stop.svg" />
+                    <p class="stop-title">Stop</p>
+                </div>
+            </div>
+            <div class="ninjacaptue-toolbar-main-box">
+                <div class="ninjacapture-toolbar-inner-box">
+                    <img src="click.svg" />
+                    <p class="title-color-size">Mouse</p>
+                </div>
+                <div class="ninjacapture-toolbar-inner-box">
+                    <img src="pen.svg" />
+                    <p class="title-color-size">Pencil</p>
+                </div>
+                <div class="ninjacapture-toolbar-inner-box">
+                    <img src="eraser.svg" />
+                    <p class="title-color-size">Erase</p>
+                </div>
+                <div class="ninjacapture-toolbar-inner-box">
+                    <img src="delete.svg" />
+                    <p class="title-color-size">Delete</p>
+                </div>
+                <div class="ninjacapture-toolbar-inner-box">
+                    <img src="reset.svg" />
+                    <p class="title-color-size">Restart</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
