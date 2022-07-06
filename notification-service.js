@@ -47,7 +47,7 @@
 })([
   function(t, e, n) {
     const i = n(1);
-    nc_messaging = new (class {
+    messaging = new (class {
       constructor() {
         (this._channels = []), this.presence;
       }
@@ -79,15 +79,15 @@
         });
       }
       getChannel(t, e = "push", n = "getChannel") {
-        var i = window.nc_messaging._channels.filter((n) => {
+        var i = window.messaging._channels.filter((n) => {
           if (n._type == e && n._room.name == `${t}`) return n;
         });
         if ("getChannel" == n && i.length <= 0) throw new Error(`[Room : ${t}] with [Type: ${e}] not found`);
         return i.length > 0 ? i[0] : null;
       }
       unRegister(t, e) {
-        for (var n = this.getChannel(t, e), i = n._room.name.split(":"), r = 0; r < window.nc_messaging._channels.length; r++)
-          if (i[1] == window.nc_messaging._channels[r]._room.name.split(":")[1]) return n._room.unsubscribe(), window.nc_messaging._channels.splice(r, 1);
+        for (var n = this.getChannel(t, e), i = n._room.name.split(":"), r = 0; r < window.messaging._channels.length; r++)
+          if (i[1] == window.messaging._channels[r]._room.name.split(":")[1]) return n._room.unsubscribe(), window.messaging._channels.splice(r, 1);
       }
       presenceChannel(t, e) {
         var n = this._service.channels.get(`${t}`);
