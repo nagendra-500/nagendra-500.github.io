@@ -348,7 +348,7 @@ button {
   max-height: 100px !important;
   overflow-y: auto !important;
   overflow-x: hidden !important;
-  padding: 4px 5px 4px 0px !important;
+  padding: 4px 20px 4px 0px !important;
   font-family: inherit !important;
 }
 .cleanslate .ql-editor li:not(.ql-direction-rtl):before {
@@ -611,7 +611,7 @@ button {
   }
 }
 .cleanslate .ninjachat-chat .ninjachat-bg-img-section {
-  max-height: calc(100vh - 520px) !important;
+  max-height: calc(100vh - 310px) !important;
   overflow-x: hidden !important;
 }
 .cleanslate.mobile-chat-widget .ninjachat-chat .chat-body-height.ninjachat-bg-img-section {
