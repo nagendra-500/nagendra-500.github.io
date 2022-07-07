@@ -1208,7 +1208,7 @@ button {
 .cleanslate .ninjachat-footer-section .ql-container .ql-editor {
   min-height: 0px !important;
 }
-.cleanslate .ninjachat-ultra .rounded-avatar,
-.cleanslate .ninjachat-bubble .rounded-avatar {
+.cleanslate.ninjachat-ultra .rounded-avatar,
+.cleanslate.ninjachat-bubble .rounded-avatar {
   border-radius: 4px !important;
 }
