@@ -611,7 +611,7 @@ button {
   }
 }
 .cleanslate .ninjachat-chat .ninjachat-bg-img-section {
-  max-height: calc(100vh - 310px) !important;
+  max-height: calc(100vh - 520px) !important;
   overflow-x: hidden !important;
 }
 .cleanslate.mobile-chat-widget .ninjachat-chat .chat-body-height.ninjachat-bg-img-section {
@@ -1207,4 +1207,8 @@ button {
 }
 .cleanslate .ninjachat-footer-section .ql-container .ql-editor {
   min-height: 0px !important;
+}
+.cleanslate .ninjachat-ultra .rounded-avatar,
+.cleanslate .ninjachat-bubble .rounded-avatar {
+  border-radius: 4px !important;
 }
