@@ -346,7 +346,8 @@ button {
 .cleanslate .ninjachat-footer-section .ql-container {
   min-height: 45px !important;
   max-height: 100px !important;
-  overflow: auto;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
   padding: 4px 5px 4px 0px !important;
   font-family: inherit !important;
 }
@@ -1203,4 +1204,7 @@ button {
 }
 .cleanslate.ninjachat-ultra .align-self-end .name-gravatar.mr-2 {
   margin-right: 0px !important;
+}
+.cleanslate .ninjachat-footer-section .ql-container .ql-editor {
+  min-height: 0px !important;
 }
