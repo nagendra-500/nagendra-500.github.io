@@ -1,0 +1,26 @@
+{
+  "name": "App Minds ",
+  "description": "Gitbu starred repos list",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": {
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "browser_action": {
+    "default_title": "App Minds",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["storage", "notifications", "cookies", "tabs", "<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["cs/script.js"],
+      "css": ["/cs/style.css"]
+    }
+  ]
+}

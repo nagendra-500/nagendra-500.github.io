@@ -1,0 +1,197 @@
+
+.inboxsdk__menuContent {
+  border-radius: 4px !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.nooff {
+  margin-left: 5px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.inboxsdk__menu > .inboxsdk__menuContent {
+  position: relative !important;
+}
+
+.tooltiptext .tooltip-hover-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext .tooltip-hover-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltiptext:hover .tooltip-hover-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tippy-box[data-animation="fade"][data-state="hidden"] {
+  opacity: 0;
+}
+[data-tippy-root] {
+  max-width: calc(100vw - 10px);
+}
+.tippy-box {
+  max-width: 100% !important;
+}
+.tippy-box {
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  outline: 0;
+  transition-property: transform, visibility, opacity;
+}
+.tippy-box[data-placement^="top"] > .tippy-arrow {
+  bottom: 0;
+}
+.tippy-box[data-placement^="top"] > .tippy-arrow:before {
+  bottom: -7px;
+  left: 0;
+  border-width: 8px 8px 0;
+  border-top-color: initial;
+  transform-origin: center top;
+}
+.tippy-box[data-placement^="bottom"] > .tippy-arrow {
+  top: 0;
+}
+.tippy-box[data-placement^="bottom"] > .tippy-arrow:before {
+  top: -7px;
+  left: 0;
+  border-width: 0 8px 8px;
+  border-bottom-color: initial;
+  transform-origin: center bottom;
+}
+.tippy-box[data-placement^="left"] > .tippy-arrow {
+  right: 0;
+}
+.tippy-box[data-placement^="left"] > .tippy-arrow:before {
+  border-width: 8px 0 8px 8px;
+  border-left-color: initial;
+  right: -7px;
+  transform-origin: center left;
+}
+.tippy-box[data-placement^="right"] > .tippy-arrow {
+  left: 0;
+}
+.tippy-box[data-placement^="right"] > .tippy-arrow:before {
+  left: -7px;
+  border-width: 8px 8px 8px 0;
+  border-right-color: initial;
+  transform-origin: center right;
+}
+.tippy-box[data-inertia][data-state="visible"] {
+  transition-timing-function: cubic-bezier(0.54, 1.5, 0.38, 1.11);
+}
+.tippy-arrow {
+  width: 16px;
+  height: 16px;
+  color: #333;
+}
+.tippy-arrow:before {
+  content: "";
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+}
+.tippy-content {
+  position: relative;
+  padding: 5px 9px;
+  z-index: 1;
+}
+
+.tippy-box[data-theme~="light"] {
+  color: #26323d;
+  box-shadow: 0 0 20px 4px rgba(154, 161, 177, 0.15),
+    0 4px 80px -8px rgba(36, 40, 47, 0.25),
+    0 4px 4px -2px rgba(91, 94, 105, 0.15);
+  background-color: #fff;
+}
+.tippy-box[data-theme~="light"][data-placement^="top"] > .tippy-arrow:before {
+  border-top-color: #fff;
+}
+.tippy-box[data-theme~="light"][data-placement^="bottom"]
+  > .tippy-arrow:before {
+  border-bottom-color: #fff;
+}
+.tippy-box[data-theme~="light"][data-placement^="left"] > .tippy-arrow:before {
+  border-left-color: #fff;
+}
+.tippy-box[data-theme~="light"][data-placement^="right"] > .tippy-arrow:before {
+  border-right-color: #fff;
+}
+.tippy-box[data-theme~="light"] > .tippy-backdrop {
+  background-color: #fff;
+}
+.tippy-box[data-theme~="light"] > .tippy-svg-arrow {
+  fill: #fff;
+}
+.op-noevents {
+  pointer-events: none;
+}
+.tippy-box {
+  max-height: 350px !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+.oauth-button {
+  display: flex;
+  align-items: center;
+}
+
+.ml-10px {
+  margin-left: 10px;
+}
+
+.powered-text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 2.75rem !important;
+}
+.login-content .powered-text {
+  font-size: 0.85rem !important;
+}
+.pr-4 {
+  padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 3.5rem !important;
+  padding-right: 3.5rem !important;
+}
+.options-icons {
+  color: #bdc4cf;
+}
+.options-icons:hover {
+  color: #2c7be5 !important;
+}
+.ellipsis {
+  max-width: 22ch !important;
+}
