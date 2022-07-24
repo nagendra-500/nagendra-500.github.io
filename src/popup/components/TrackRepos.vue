@@ -52,6 +52,13 @@
                       {{ data.value }}
                     </p>
                   </template>
+                  <template #cell(stars_count)="data">
+                    <div>
+                      <p class="mb-1 ellipsis">
+                        {{ data.value }}
+                      </p>
+                    </div>
+                  </template>
                   <template #cell(repo_url)="data">
                     <p class="mb-1 ellipsis">
                       <b-link :id="'find' + data.value" @click="openLink(data.value)" v-b-popover.hover.top="data.value">

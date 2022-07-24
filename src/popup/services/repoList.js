@@ -21,6 +21,10 @@ export default {
           label: 'Description',
         },
         {
+          key: 'stars_count',
+          label: 'starred count',
+        },
+        {
           key: 'open_issues_count',
           label: 'Open issues',
         },
