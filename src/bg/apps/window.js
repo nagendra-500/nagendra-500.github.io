@@ -5,7 +5,7 @@ class ChromeWindow {
    */
   openNewWindow(url) {
     return new Promise((resolve, reject) => {
-      chrome.windows.create({ url: url, state: "maximized" }, (window) => {
+      chrome.windows.create({ url: url, state: 'maximized' }, window => {
         resolve(window.tabs[0]);
       });
     });
@@ -17,7 +17,7 @@ class ChromeWindow {
    */
   openTab(url) {
     return new Promise((resolve, reject) => {
-      chrome.tabs.create({ url: url }, (tab) => {
+      chrome.tabs.create({ url: url }, tab => {
         resolve(tab);
       });
     });
@@ -28,7 +28,7 @@ class ChromeWindow {
    */
   openWindow() {
     return new Promise((resolve, reject) => {
-      chrome.windows.create((window) => {
+      chrome.windows.create(window => {
         resolve(window.tabs[0]);
       });
     });
@@ -41,9 +41,9 @@ class ChromeWindow {
    */
   updateTab(tab, url) {
     return new Promise((resolve, reject) => {
-      chrome.tabs.update(tab.id, { url: url }, function (tab) {
+      chrome.tabs.update(tab.id, { url: url }, function(tab) {
         chrome.tabs.onUpdated.addListener(function listener(tabId, info) {
-          if (info.status === "complete" && tabId === tab.id) {
+          if (info.status === 'complete' && tabId === tab.id) {
             chrome.tabs.onUpdated.removeListener(listener);
             resolve(tab);
           }
@@ -59,7 +59,7 @@ class ChromeWindow {
    */
   execScript(tab, code) {
     return new Promise((resolve, reject) => {
-      chrome.tabs.executeScript(tab.id, { code: code, runAt: "document_end" }, function (data) {
+      chrome.tabs.executeScript(tab.id, { code: code, runAt: 'document_end' }, function(data) {
         resolve(data);
       });
     });
@@ -70,7 +70,7 @@ class ChromeWindow {
    */
   getActiveTab() {
     return new Promise((resolve, reject) => {
-      chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         resolve(tabs[0]);
       });
     });

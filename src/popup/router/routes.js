@@ -1,15 +1,15 @@
-import PageIndex from "./pages/Index";
-import PageRegistered from "./pages/Registered";
+import PageIndex from './pages/Index';
+import PageRegistered from './pages/Registered';
 
 export default [
   {
-    path: "/",
+    path: '/',
     component: PageIndex,
   },
   {
-    path: "/registered",
-    name: "registered",
+    path: '/registered',
+    name: 'registered',
     component: PageRegistered,
     props: true,
-  }
+  },
 ];

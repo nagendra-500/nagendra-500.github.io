@@ -9,7 +9,7 @@ export default {
   },
   created() {
     // Registered main route
-    this.$router.push("/registered");
+    this.$router.push('/registered');
   },
 };
 </script>

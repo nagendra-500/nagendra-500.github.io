@@ -1,3 +1,4 @@
+import DOM from './dom.js';
 
 // eslint-disable-next-line no-use-before-define
 var browser = browser || chrome;
@@ -12,22 +13,17 @@ class CSAppMinds {
 
   // Add parent class for extension
   addDiv() {
-    Dom.addHTML(document.body, "<div id='appminds_extension'/>");
+    DOM.addHTML(document.body, "<div id='appminds_extension'/>");
   }
 
   // Set extension ID
   setExtensionId() {
-    if (
-      typeof chrome.app.isInstalled !== "undefined" ||
-      typeof chrome.app.isInstalled == "boolean"
-    ) {
+    if (typeof chrome.app.isInstalled !== 'undefined' || typeof chrome.app.isInstalled === 'boolean') {
       setTimeout(() => {
-        chrome.runtime.sendMessage({ _minds: "extension_id" }, function(
-          response
-        ) {
-          var elt = document.createElement("script");
+        chrome.runtime.sendMessage({ _minds: 'extension_id' }, function(response) {
+          var elt = document.createElement('script');
           elt.innerHTML = 'window.appminds_extension="' + response + '"';
-          elt.id = "extension_minds";
+          elt.id = 'extension_minds';
           document.head.appendChild(elt);
         });
       }, 500);
@@ -36,22 +32,19 @@ class CSAppMinds {
 
   // Send the current timestamp to background
   event() {
-    var domain = document.getElementById("domain").value;
+    var domain = document.getElementById('domain').value;
     var timestamp = new Date();
     var host = new URL(domain).host;
-    if (host.split(".").length >= 3) {
-      var search = host.split(".");
-      host = search.slice(1).join(".");
+    if (host.split('.').length >= 3) {
+      var search = host.split('.');
+      host = search.slice(1).join('.');
     }
-    browser.runtime.sendMessage(
-      { _minds: "storage", data: timestamp, id: host },
-      function(response) {}
-    );
+    browser.runtime.sendMessage({ _minds: 'storage', data: timestamp, id: host }, function(response) {});
   }
 
   checkUserAuth() {
-    chrome.storage.sync.get(["minds"], result => {
-      const obj = result["minds"];
+    chrome.storage.sync.get(['minds'], result => {
+      const obj = result.minds;
       // eslint-disable-next-line no-useless-return
       if (!obj.logged) return;
       else {
@@ -66,22 +59,19 @@ class CSAppMinds {
   // To get response when user login on DOM
   handleEvent() {
     browser.runtime.onMessage.addListener(request => {
-      if (
-        request.type === "login" &&
-        document.querySelector("#apps500_login") != null
-      ) {
-        document.querySelector("#apps500_login").remove();
+      if (request.type === 'login' && document.querySelector('#apps500_login') != null) {
+        document.querySelector('#apps500_login').remove();
         this.sendResponse(window.rules, this.parseData);
       }
-      if (request.type === "login") window._minds_auth = true;
+      if (request.type === 'login') window._minds_auth = true;
       else window._minds_auth = false;
     });
   }
 }
 
 // Create instance  - also, script was loaded twice
-chrome.storage.sync.get(["minds"], result => {
-  const obj = result["minds"];
+chrome.storage.sync.get(['minds'], result => {
+  const obj = result.minds;
   // eslint-disable-next-line no-useless-return
   if (!obj.logged) return;
   else {

@@ -28,7 +28,7 @@
             <div class="text-left ml-2 f-lineheight">
               <!-- Title -->
               <h6 class="mb-0 name ellipsis pt-1">
-                <span>{{ user.email.split("@")[0] }}</span>
+                <span>{{ user.email.split('@')[0] }}</span>
               </h6>
               <!-- support line -->
               <div class="mb-0 ellipsis text-center">
@@ -43,12 +43,12 @@
 </template>
 
 <script>
-import TrackRepos from "./TrackRepos";
+import TrackRepos from './TrackRepos';
 export default {
   data() {
     return {
       user: {
-        email: "info@appminds.com",
+        email: 'info@appminds.com',
       },
     };
   },
@@ -58,11 +58,7 @@ export default {
   methods: {
     showActivity() {
       event.preventDefault();
-      window.open(
-        "chrome-extension://" +
-          chrome.i18n.getMessage("@@extension_id") +
-          "/popup/popup.html#/activities"
-      );
+      window.open('chrome-extension://' + chrome.i18n.getMessage('@@extension_id') + '/popup/popup.html#/activities');
     },
   },
 };

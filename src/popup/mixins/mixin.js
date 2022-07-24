@@ -1,5 +1,5 @@
 // Define a mixin object
-import axios from "axios";
+import axios from 'axios';
 
 var mixinMinds = {
   methods: {
@@ -9,21 +9,21 @@ var mixinMinds = {
     },
 
     // Make axios request & get the data
-    getURL: function (page) {
+    getURL: function(page) {
       return axios
         .get(this.getAppDomain(page), {
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
           withCredentials: false,
         })
-        .then((response) => response);
+        .then(response => response);
     },
 
     // Get respective tab URL
     getTabURL() {
       if (this.$tab) return this.$tab.url;
-      return "https://www.appmindstech.com";
+      return 'https://www.appmindstech.com';
     },
 
     // Get host with respective website

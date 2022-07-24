@@ -2,7 +2,7 @@ class Notification {
   // Send desktop notification to user
   send(title, message, image, id) {
     const data = {
-      type: "basic",
+      type: 'basic',
       title: title,
       message: message,
       iconUrl: browser.extension.getURL(image),
