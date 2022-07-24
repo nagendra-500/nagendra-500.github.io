@@ -106,7 +106,7 @@ export default {
     return {
       isBusy: false,
       currentPage: 1,
-      perPage: 10,
+      perPage: 30,
       githubRepos: true,
       items: [],
       offset: 0,
@@ -135,7 +135,7 @@ export default {
         .then(response => {
           // Pluck the array of items off our axios response
           if (response.data.items.length) {
-            this.count = response.data.items.length;
+            this.count = response.data.items.length * 3;
             this.githubRepos = true;
             this.items = [];
             this.page = ctx.currentPage;
